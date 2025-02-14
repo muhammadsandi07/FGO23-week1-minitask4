@@ -53,4 +53,6 @@ const movie = {
 movie.getDataA()
 movie.getCastAsc()
 movie.setTitle('budi')
-movie.setImage('gambarBudi.jgp')
+movie.setImage('gambarBudi.jpg')
+
+console.log(movie)

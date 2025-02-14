@@ -14,3 +14,5 @@ const movie = {
     },
   ],
 }
+
+console.log(movie)
