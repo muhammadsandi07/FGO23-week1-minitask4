@@ -17,11 +17,18 @@ const transformSentence = (sentence) => {
 
   const newText = sentence
     .split(' ')
-    .sort((a, b) => b.localeCompare(a))
+    .sort((a, b) => {
+      if (a < b) {
+        return -1
+      }
+      if (a > b) {
+        return 1
+      }
+      return 0
+    })
     .map((word) => word.toLocaleUpperCase())
-    .concat('FAZZTRACK')
-    .reverse()
-    .join(' ')
+  newText.push('FAZZTRACK')
+  newText.reverse().join(' ')
   console.log(newText)
 }
 
